@@ -85,47 +85,6 @@
         <div style="clear: left;"></div>
 
     </div>
-
-    <!-- <script>
-
-        document.getElementById('SignupForm').addEventListener("submit", function (even) {
-            event.preventDefault();
-        })
-
-        function processForm() {
-            var fullname = document.getElementById('fullname').value
-            email = document.getElementById('email').value
-            username = document.getElementById('username').value
-            password = document.getElementById('password').value
-            cpassword = document.getElementById('confirmpassword').value
-
-            var data = {
-                "fullname": fullname,
-                "email": email,
-                "username": username,
-                "newpassword": password,
-                "isEnabled": true,
-                "roles": ["user"]
-            }
-
-            if (password != cpassword) {
-                alert("Password Mismatch")
-            } else {
-
-                fetch('https://api.openclass.ng/Register', {
-                    method: 'POST',
-                    body:JSON.stringify(data),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                }).then(function(data){
-                    alert('Congrats')
-                })
-            }
-        } -->
-
-
-    </script>
 </body>
 
 </html>
