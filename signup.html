@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <title>TIIDELAB Signup Form</title>
+
+    <style>
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 5px 20px;
+            border-radius: 10px;
+        }
+
+        .submit {
+            background-color: slateblue;
+            width: 85%;
+            color: snow;
+            font-size: 24px;
+        }
+
+        input:focus {
+            background-color: salmon;
+            color: seashell;
+            outline: none;
+        }
+
+        h3 {
+            color: slateblue;
+            margin: 15px;
+            font-size: 32px;
+        }
+
+        .form-container,
+        .instruction {
+            float: left;
+            width: 50%;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .form-container,
+            .instruction {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body style="background-color: mediumpurple;">
+
+    <div style="background-color: mistyrose; padding: 5px;
+                height: 60%; width: 70%;  
+                border-radius: 10px; 
+                margin: 100px auto;">
+
+        <div class="instruction">
+
+            <img src="learning.jpg" alt="Learning" srcset="" style="max-width: 100%;">
+
+        </div>
+
+        <div class="form-container">
+
+            <h3> Registration Form </h3>
+
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="text" name="name" placeholder="Enter Your Full Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email Address" required>
+                <input type="text" name="username" placeholder="Enter Your Username" required>
+                <input type="password" name="password" placeholder="Enter Your Password" required>
+                <input type="password" name="cpassword" placeholder="Enter Your Password Again" required>
+                <input type="submit" value="Signup" class="submit">
+            </form>
+
+        </div>
+        <div style="clear: left;"></div>
+
+    </div>
+</body>
+
+</html>
